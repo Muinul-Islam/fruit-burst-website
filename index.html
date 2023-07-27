@@ -25,28 +25,30 @@
     <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-5">
       <!-- navbar section -->
       <nav class="bg-[#ef4444] rounded-[600px]">
-        <div class="navbar sm:row-reverse">
-          <div class="">
-            <ul class="flex md:row-span-2 gap-3 text-lg text-white pl-10">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Shop</li>
-              <li>All Fruits</li>
-            </ul>
-          </div>
-          <div class="flex-1 justify-start md:justify-center gap-4">
-            <img src="./images/logo.png" alt="">
-            <h1 class="text-white text-2xl md:text-4xl font-bold">Fruit Burst</h1>
-          </div>
-          <div class="gap-2 pr-10">
-            <div class="flex justify-between items-center">
-              <div>
-                <input type="text" placeholder="Search Here" class="input  w-28 md:w-auto rounded-[600px] " />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
+        <div class="navbar md:text-white">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:text-black">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
           </div>
-        </div>
+          <div class="navbar-center">
+            <img src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case text-2xl md:text-4xl  md:text-white">Fruit Burst</a>
+          </div>
+          <div class="navbar-end">
+            <div class="pr-3 relative">
+              <input class="py-2 px-2 rounded-3xl input input-bordered w-20 md:w-auto" type="text" placeholder="Search here">
+              <img class="absolute top-3 right-6 " src="./images/Frame.svg" alt="">
+            </div>
+          </div>
         </div>
       </nav>
     </section>
